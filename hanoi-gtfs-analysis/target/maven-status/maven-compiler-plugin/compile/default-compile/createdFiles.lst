@@ -1,0 +1,7 @@
+gtfs\GTFSAnalyser_vers1.class
+gtfs\coordonnees_arret.class
+gtfs\Liste_Arret.class
+gtfs\GTFSAnalyzer.class
+gtfs\LesPointsEntreArret.class
+gtfs\TrajetEntreArrets.class
+gtfs\Horaire_Arret.class

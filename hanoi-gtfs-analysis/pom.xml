@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.hanoi</groupId>
+    <artifactId>hanoi-gtfs-analysis</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>HanoiGTFSAnalyzer</name>
+    <description>Analyse des données de transport GTFS pour Hanoi</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+	<dependencies>
+		<!-- Dépendance pour OneBusAway GTFS Modules -->
+		<dependency>
+			<groupId>org.onebusaway</groupId>
+			<artifactId>onebusaway-gtfs</artifactId>
+			<version>3.2.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.11</version>
+		</dependency>
+
+
+		<!-- Dépendance pour JFreeChart -->
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.11</version>
+		</dependency>
+
+
+		<!-- Dépendance pour SLF4J (nécessaire pour OneBusAway) -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.16</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jxmapviewer</groupId>
+			<artifactId>jxmapviewer2</artifactId>
+			<version>2.6</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<!-- Ajout du dépôt pour les dépendances OneBusAway -->
+		<repository>
+			<id>onebusaway-repo</id>
+			<url>https://repo.onebusaway.org/maven-releases/</url>
+		</repository>
+	</repositories>
+</project>
